@@ -1,6 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="16dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1,2,3,4,5"
+        android:padding="8dp">
+
+        <!-- Header Row -->
+        <TableRow>
+            <TextView android:text="Time" style="@style/CellHeader" />
+            <TextView android:text="Mon" style="@style/CellHeader" />
+            <TextView android:text="Tue" style="@style/CellHeader" />
+            <TextView android:text="Wed" style="@style/CellHeader" />
+            <TextView android:text="Thu" style="@style/CellHeader" />
+            <TextView android:text="Fri" style="@style/CellHeader" />
+        </TableRow>
+
+        <!-- Time Slots -->
+        <TableRow>
+            <TextView android:text="08:00 - 09:00" style="@style/CellTime" />
+            <TextView android:id="@+id/mon1" style="@style/Cell" />
+            <TextView android:id="@+id/tue1" style="@style/Cell" />
+            <TextView android:id="@+id/wed1" style="@style/Cell" />
+            <TextView android:id="@+id/thu1" style="@style/Cell" />
+            <TextView android:id="@+id/fri1" style="@style/Cell" />
+        </TableRow>
+
+        <TableRow>
+            <TextView android:text="09:00 - 10:00" style="@style/CellTime" />
+            <TextView android:id="@+id/mon2" style="@style/Cell" />
+            <TextView android:id="@+id/tue2" style="@style/Cell" />
+            <TextView android:id="@+id/wed2" style="@style/Cell" />
+            <TextView android:id="@+id/thu2" style="@style/Cell" />
+            <TextView android:id="@+id/fri2" style="@style/Cell" />
+        </TableRow>
+
+        <TableRow>
+            <TextView android:text="10:00 - 11:00" style="@style/CellTime" />
+            <TextView android:id="@+id/mon3" style="@style/Cell" />
+            <TextView android:id="@+id/tue3" style="@style/Cell" />
+            <TextView android:id="@+id/wed3" style="@style/Cell" />
+            <TextView android:id="@+id/thu3" style="@style/Cell" />
+            <TextView android:id="@+id/fri3" style="@style/Cell" />
+        </TableRow>
+
+        <TableRow>
+            <TextView android:text="11:00 - 12:00" style="@style/CellTime" />
+            <TextView android:id="@+id/mon4" style="@style/Cell" />
+            <TextView android:id="@+id/tue4" style="@style/Cell" />
+            <TextView android:id="@+id/wed4" style="@style/Cell" />
+            <TextView android:id="@+id/thu4" style="@style/Cell" />
+            <TextView android:id="@+id/fri4" style="@style/Cell" />
+        </TableRow>
+
+        <!-- Lunch Break -->
+        <TableRow>
+            <TextView android:text="12:00 - 13:00" style="@style/CellTime" />
+            <TextView android:text="Lunch" android:gravity="center" style="@style/Cell" />
+        </TableRow>
+
+        <!-- Afternoon Sessions -->
+        <TableRow>
+            <TextView android:text="13:00 - 14:00" style="@style/CellTime" />
+            <TextView android:id="@+id/mon5" style="@style/Cell" />
+            <TextView android:id="@+id/tue5" style="@style/Cell" />
+            <TextView android:id="@+id/wed5" style="@style/Cell" />
+            <TextView android:id="@+id/thu5" style="@style/Cell" />
+            <TextView android:id="@+id/fri5" style="@style/Cell" />
+        </TableRow>
+
+        <TableRow>
+            <TextView android:text="14:00 - 15:00" style="@style/CellTime" />
+            <TextView android:id="@+id/mon6" style="@style/Cell" />
+            <TextView android:id="@+id/tue6" style="@style/Cell" />
+            <TextView android:id="@+id/wed6" style="@style/Cell" />
+            <TextView android:id="@+id/thu6" style="@style/Cell" />
+            <TextView android:id="@+id/fri6" style="@style/Cell" />
+        </TableRow>
+
+        <TableRow>
+            <TextView android:text="15:00 - 16:00" style="@style/CellTime" />
+            <TextView android:id="@+id/mon7" style="@style/Cell" />
+            <TextView android:id="@+id/tue7" style="@style/Cell" />
+            <TextView android:id="@+id/wed7" style="@style/Cell" />
+            <TextView android:id="@+id/thu7" style="@style/Cell" />
+            <TextView android:id="@+id/fri7" style="@style/Cell" />
+        </TableRow>
+
+    </TableLayout>
+</ScrollView>
